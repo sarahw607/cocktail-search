@@ -1,0 +1,6 @@
+<div class="card" *ngFor="let cocktail of searchResults$ | async; index as i">
+    <img [src]="cocktail.strDrinkThumb" class="card-img-top" alt="">
+    <div class="card-body">
+        {{cocktail.strDrink}}
+    </div>
+</div>
